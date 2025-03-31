@@ -1,0 +1,37 @@
+Env:
+  dt: 0.01
+  radius_robot: 0.25 # BlueROV2 robot
+  l_robot: 0.15
+  radius_obs: 0.25 # BlueROV2 robot
+  fov_angle: 40.0 # degrees
+  fov_radius: 15.0
+  n_x: 3 # number of states
+  n_u: 2 # number of inputs
+  n_cbf: 2 # dimension of the CBF
+  mean_obs_states:
+    - [0.0, 5.0, 0.75, -0.75] # consider a single object
+  target_threshold: 0.2
+  sigma_robot: [0.03, 0.03, 0.01]
+  sigma_obs: [0.1, 0.1]
+
+ShieldMPPI:
+  device: "gpu"
+  n_mppi_samples: 512
+  temperature: 1.0
+  time_horizon: 2 # [second]
+
+BeliefCBF_VaR:
+  delta: 0.05
+  tau: 0.1
+  gamma: 100
+
+BeliefCBF_CVaR:
+  delta: 0.05
+  tau: 0.1
+  gamma: 100
+  b_max: -0.1 
+
+BeliefCBF_E:
+  delta: 0.05
+  gamma: 100
+  b_max: -0.1 

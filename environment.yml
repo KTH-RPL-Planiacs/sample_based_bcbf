@@ -1,0 +1,18 @@
+name: sample_based_bcbf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - cvxpy
+  - matplotlib
+  - numpy
+  - scipy
+  - pyyaml
+  - pip:
+      - jax[cuda12]==0.4.35
+      - flax
+      - proxsuite==0.6.7
+      - tyro==0.9.1
+      - ipykernel
+      - SciencePlots
