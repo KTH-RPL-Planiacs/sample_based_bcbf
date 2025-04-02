@@ -152,7 +152,7 @@ def main(args: Args):
             ax.add_patch(target_region)
 
         ax.set_xlabel(r"$p_x$ in $[\mathrm{m}]$", fontsize=28)
-        ax.set_ylabel(r"$p_x$ in $[\mathrm{m}]$", fontsize=28)
+        ax.set_ylabel(r"$p_y$ in $[\mathrm{m}]$", fontsize=28)
         ax.grid(False)
         ax.tick_params(axis='both', which='major', labelsize=28)
         ax.set_aspect('equal')

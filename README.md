@@ -29,9 +29,3 @@ To visualize by animation:
 ```zsh
 zsh scripts/create_gif.sh
 ```
-
-In both examples (Object Tracking and Collision Avoidance), we have access to the sample-based object beliefs drawn from Gaussian mixtures.
-<p float="left">
-    <img src="assets/tracking_env.gif" width="300" />
-    <img src="assets/colav_env.gif" width="300" />
-</p>
