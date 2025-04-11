@@ -30,7 +30,7 @@ To visualize by animation:
 zsh scripts/create_gif.sh
 ```
 
-## Cite
+## BibTeX
 ```
 @article{han2025risk,
   title={Risk-Aware Robot Control in Dynamic Environments Using Belief Control Barrier Functions},
