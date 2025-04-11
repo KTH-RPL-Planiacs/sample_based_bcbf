@@ -1,6 +1,6 @@
 # CBFs for Sample-Based Beliefs
 
-This repository accompanies the paper **"Risk-Aware Robot Control in Dynamic Environments using Belief Control Barrier Functions"**, submitted to CDC 2025.
+This repository accompanies the paper ["Risk-Aware Robot Control in Dynamic Environments using Belief Control Barrier Functions"](https://arxiv.org/abs/2504.04097), submitted to CDC 2025.
 
 ## Installation
 
@@ -28,4 +28,14 @@ To visualize by animation:
 
 ```zsh
 zsh scripts/create_gif.sh
+```
+
+## Cite
+```
+@article{han2025risk,
+  title={Risk-Aware Robot Control in Dynamic Environments Using Belief Control Barrier Functions},
+  author={Han, Shaohang and Vahs, Matti and Tumova, Jana},
+  journal={arXiv preprint arXiv:2504.04097},
+  year={2025}
+}
 ```
