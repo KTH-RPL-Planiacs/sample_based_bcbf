@@ -1,14 +1,19 @@
 # Control Barrier Functions for Sample-Based Beliefs
 
-This repository accompanies the paper ["Risk-Aware Robot Control in Dynamic Environments using Belief Control Barrier Functions"](https://arxiv.org/abs/2504.04097), accepted at CDC 2025, Rio de Janeiro, Brazil.
+This repository accompanies our paper:  ["Risk-Aware Robot Control in Dynamic Environments using Belief Control Barrier Functions"](https://arxiv.org/abs/2504.04097), accepted at CDC 2025, Rio de Janeiro, Brazil.
 
-## Why invent this tool?
 
-Real-world robots face *stochastic uncertainties* due to factors such as unmodeled dynamics, noisy sensor measurements, and partial observability.
+## Why This Tool?
 
-We aim to **guarantee safety using only i.i.d. samples from belief distributions**, *without relying on parametric representations*.
+Real-world robots operate under **stochastic uncertainties** — caused by unmodeled dynamics, noisy sensors, and partial observability.
 
-Our safety filter can run at kilo-Hz rates, ensuring **real-time performance**.
+This tool is designed to **guarantee safety using only i.i.d. samples from belief distributions**, without relying on **parametric representations**.
+
+### ✅ Key Features
+- **Provable safety guarantees** under uncertainty
+- **No parametric modeling required** — works directly with i.i.d. samples from any Bayesian state estimator
+- **Real-time performance** at **kilo-Hz rates**, suitable for robotics
+
 
 ## Installation
 Clone the repository:
@@ -24,18 +29,19 @@ mamba env create -f environment.yml
 mamba activate sample_based_bcbf
 ```
 
-## Run
-To run the main experiment and collect data:
+
+## How to Run
+Run the main experiment and collect data:
 ```zsh
 python3 main.py 
 ```
-To visualize by animation:
-
+Visualize results with animation:
 ```zsh
 zsh scripts/create_gif.sh
 ```
 
 ## BibTeX
+If you find this work useful, please consider citing:
 ```
 @article{han2025risk,
   title={Risk-Aware Robot Control in Dynamic Environments Using Belief Control Barrier Functions},
